@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.page{
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  width:12rem ;
+  height: 0 auto;
+}
+
+/* Navbar.css */
+
+/* Basic Styles */
+.Nav-wrapper {
+    background-color: #333;
+    padding: 20px 5px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .Nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  /* .Nav-content .page {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+   */
+  .Nav-content ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Nav-content ul li {
+    margin-left: 0px;
+  }
+  
+  .Nav-content ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    
+  }
+  
+  .Nav-content ul li a:hover {
+    color: #f0a500;
+  }
+  
+  .contact-btn {
+    background-color: #f0a500;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #d48e00;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Tablet and smaller screens */
+  @media (max-width: 768px) {
+    .Nav-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .Nav-content ul {
+      flex-direction: column;
+      width: 20%;
+      margin-top: 10px;
+      
+    }
+  
+    .Nav-content ul li {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .Nav-content ul li a {
+      width: 100%;
+      padding: 10px 0;
+      text-align: left;
+    }
+    .contact-btn{
+        margin-left: 0;
+    }
+  
+    
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .Nav-wrapper {
+      padding: 10px;
+    }
+  
+    .Nav-content .page {
+      font-size: 1.2rem;
+    }
+  
+    .Nav-content ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .contact-btn {
+      font-size: 0.9rem;
+    }
+  }
+  
