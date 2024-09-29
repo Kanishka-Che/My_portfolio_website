@@ -18,6 +18,7 @@
     top: 0;
     position: fixed;
     z-index: 100;
+    cursor: pointer;
   }
   
   .Nav-content {
@@ -51,18 +52,19 @@
     font-size: 1rem;
     padding: 10px 20px;
     transition: color 0.3s ease;
+    cursor: pointer;
     
   }
   
   .Nav-content ul li a:hover {
-    color: #f0a500;
+    color: #282725;
   }
   
   .contact-btn {
-    background-color: #f0a500;
+    background-color: #040404;
     border: none;
     color: white;
-    padding: 5px 5px;
+    padding: 5px 20px;
     border-radius: 5px;
     font-size: 1rem;
     margin-left: 20px;
@@ -72,7 +74,7 @@
   }
   
   .contact-btn:hover {
-    background-color: #d48e00;
+    background-color: #282725;
   }
   
   /* Responsive Styles */
@@ -100,6 +102,7 @@
       width: 100%;
       padding: 10px 0;
       text-align: left;
+     
     }
     .contact-btn{
         margin-left: 0;
