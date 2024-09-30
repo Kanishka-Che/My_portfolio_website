@@ -1,92 +1,134 @@
-.hero-container{
+.hero-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
     position: relative;
     background-color: #060417;
-}
-
-.hero-container::after,
-.hero-container::before{
-    content: "";
-    width: 28.125rem;
-    height: 28.125rem;
-    border-radius: 20.125rem;
-    background: #060417;
-    position: absolute;
-    
-}
-
-.hero-content{
-    flex: 1;
+    min-height: 100vh;
+    overflow: hidden;
     color: #fff;
+}
+
+/* Background Circles */
+.hero-container::before,
+.hero-container::after {
+    content: "";
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background: rgba(1, 241, 101, 0.986);
+    position: absolute;
+    z-index: -1;
+}
+
+.hero-container::before {
+    top: -8rem;
+    right: -12rem;
+}
+
+.hero-container::after {
+    bottom: -10rem;
+    left: -10rem;
+}
+
+/* Hero Content */
+.hero-content {
+    flex: 1;
+    z-index: 2;
     
 }
-.image1{
-    border-radius: 20%;
-    width:80% ;
-    height: 70% ;
-    margin-top: 90px;
-    margin-left: 0%;
-}
-.image2{
-    width:80% ;
-    height: 70% ;
-    margin-top: 90px;
-    margin-left: 0%;
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
 }
 
-.hero-content h2{
-    font-size: 3.8rem;
-    font-weight: 600;
-    line-height: 60px;
-    margin-bottom:600px;
-    width: 20px;
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 1.8;
 }
 
-.hero-content p{
-    width:80%;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 2rem;
-}
-
-.hero-img{
+/* Hero Images Section - Horizontal Layout */
+.hero-img {
     flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 5rem;
+    flex-direction:row; /* Row layout for images */
+    justify-content: space-between; /* Evenly distribute images */
+    align-items: center; /* Vertically align the images */
+    gap: 2rem; /* Space between the images */
+    z-index: 2;
 }
 
-.hero-img > div {
+.icon{
+    flex: 1;
     display: flex;
-    align-items: flex-end;
-    gap: 2rem;
+    flex-direction: row;
 }
-
-.hero-img>div>img{
-    width: 25rem;
-    transition: all 0.3s ease;
-}
-
-.tech-icon{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 0.65rem;
-    
-}
-
+/* Tech Icons */
 .tech-icon img {
-    width: 3rem;
+    border-radius: 15%;
+    width: 120px; /* Adjust image width */
     height: auto;
-  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hero-img > div> img:hover,
-.tech-icon img:hover{
-    transform: translate(-01.5rem);
+.tech-icon img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px  rgb(255, 255, 255);
 }
+
+/* General Image Styles */
+.hero-img img {
+    border-radius: 10px;
+    width: 200px; /* Adjust width for uniform image size */
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-img img:hover {
+    transform: translateY(-10px);
+    filter: brightness(1.2);
+}
+
+/* Icon Container for other images */
+.icon img {
+    width: 150px; /* Adjust width for icon images */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon img:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+}
+
+/* Responsive Design for Mobile */
+/* @media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-img {
+        flex-direction: column; 
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero-img img, .icon img {
+        width: 80%; 
+    }
+} */

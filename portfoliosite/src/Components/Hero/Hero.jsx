@@ -22,9 +22,10 @@ const Hero = () => {
  <div className='hero-img'>
       <div className='tech-icon'>
         <img className='image1' src={photo1} alt="photo 1"/>
-      </div>
+      
       <div>
       <img className='image2' src={photo2} alt="photo 2"/>
+      </div>
       </div>
 
     <div>

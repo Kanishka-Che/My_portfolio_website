@@ -1,0 +1,74 @@
+.skills-card {
+    border-radius: 0.7rem;
+    border: 1.5px solid #6751b9;
+    padding: 2rem; /* Adjusted padding for better responsiveness */
+    text-align: center;
+    background: rgba(22, 17, 47, 1);
+    backdrop-filter: blur(10px); /* Fixed backdrop-filter syntax */
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.skills-card:hover,
+.skills-card.active {
+    background: linear-gradient(180deg, #aa94fe 0%, #7c5fe6 100%);
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.skill-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7c5fe6;
+    border-radius: 0.7rem;
+    border: 1.5px solid #7c5fe6;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.skill-icon:hover {
+    background: #aa94fe; /* Change icon color on hover */
+}
+
+.skills-card img {
+    width: 2.4rem;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills-card {
+        padding: 1.5rem; /* Less padding on smaller screens */
+    }
+
+    .skill-icon {
+        width: 3rem;
+        height: 3rem; /* Smaller icons on smaller screens */
+    }
+
+    .skills-card img {
+        width: 2rem; /* Adjust image size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-card {
+        padding: 1rem; /* Minimal padding on very small screens */
+    }
+
+    .skill-icon {
+        width: 2.5rem;
+        height: 2.5rem; /* Further reduce icon size */
+    }
+
+    .skills-card img {
+        width: 1.5rem; /* Further adjust image size */
+    }
+}
