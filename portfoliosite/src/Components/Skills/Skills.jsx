@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Skills.css';
 import SkillCard from './SkillCard/SkillCard';
-import SkillsinfoCard from './SkillsinfoCard/SkillsinfoCard';  // Import this component
+import SkillsinfoCard from './SkillsinfoCard/SkillsinfoCard';  
 import { SKILLS } from 'C:/Users/Chethana/Desktop/portfoliyo site/My_portfolio_website01/portfoliosite/src/Data/data.jsx'; 
 
 const Skills = () => { 
-  const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);  // Corrected useState
+  const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);  
 
   const handleSelectSkill = (data) => {
     setSelectedSkill(data);
@@ -16,22 +16,25 @@ const Skills = () => {
       <h2>Technical Proficiency</h2>
       <div className='skills-content'>
         <div className='skills'>
-        <div>
-
-          {SKILLS.map((item) => (
-            <SkillCard
-              key={item.title}  // Use a unique key, assuming 'id' is available in SKILLS data
-              iconUrl={item.icon}
-              title={item.title}
-              isActive={selectedSkill.title === item.title}
-              onClick={() => handleSelectSkill(item)}
-            />
-            
-           
-
-
-          ))}
-           </div>
+          <div>
+            {SKILLS.map((item) => (
+              <div key={item.title}>
+                <SkillCard
+                  iconUrl={item.icon}
+                  title={item.title}
+                  isActive={selectedSkill.title === item.title}
+                  onClick={() => handleSelectSkill(item)}
+                />
+                <ul>
+                  {item.Skills.map((skill, i) => (
+                    <li key={i}>
+                      {skill.skill}: {skill.Percentage}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
         <div className='skills-info'>
           <SkillsinfoCard

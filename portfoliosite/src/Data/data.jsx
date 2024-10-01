@@ -5,7 +5,6 @@ import icon4 from '../assets/icon4.png'
 export const SKILLS = [
     {
       title: "Frontend",
-      
       icon:icon1, 
       Skills: [
         { skill: "HTML5", Percentage: "80%" }, 

@@ -1,6 +1,7 @@
 import React from 'react'
 import './SkillsinfoCard.css'
 
+
 const SkillsinfoCard = ({heading ,skills}) => {
   return (
     <div className='skills-info-card'>
