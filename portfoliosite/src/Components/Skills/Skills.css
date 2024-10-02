@@ -5,6 +5,28 @@
     background-color: #060417;
 
 }
+.skills-container::after,
+.skills-container::before{
+    content: "";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 28.125rem;
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.skills-container::after{
+    top: -3rem;
+    left: -5rem;
+}
+
+.skills-container::before{
+    background: #7c5fe6;
+    bottom: 0rem;
+    right: 0rem;
+}
 
 .skill-icon {
     width: 4rem;
@@ -20,6 +42,7 @@
     left: -1rem;
     transition: background 0.3s ease; 
 } 
+
  .skill-icon img{
     width: 90px;
     height: auto;
