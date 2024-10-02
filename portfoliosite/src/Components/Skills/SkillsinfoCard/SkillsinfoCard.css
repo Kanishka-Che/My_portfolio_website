@@ -1,10 +1,11 @@
 .skills-info-card {
-    min-height: 23rem;
+    min-height: 20rem;
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
     background: rgba(22, 17, 47, 0.398);
     backdrop-filter: blur(1rem);
     margin-right: 5rem;
+    margin-bottom: 5rem;
     
   }
   
@@ -27,6 +28,7 @@
   
   .skills-info-content{
     padding: 2rem;
+    
   }
   
   .skill-info p {

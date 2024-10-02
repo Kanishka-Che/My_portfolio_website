@@ -1,0 +1,60 @@
+.contact-form-conten {
+  width: 100%;
+  padding: 2rem;
+  background-color: #1e1e2e;
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+  margin: 1;
+}
+
+form input,
+form textarea {
+  flex: 1;
+  width:auto;
+  font-size: 0.9rem;
+  color: azure;
+  background: #020202;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa; 
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #a892fe; 
+}
+
+form button {
+  font-size: 1rem;
+  font-weight: 500;
+  color: azure;
+  border: 1.5px solid #a892fe;
+  border-radius: 0.6rem;
+  background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%);
+  padding: 0.7rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: #130f2a;
+  background: transparent;
+  border-color: #a892fe;
+}

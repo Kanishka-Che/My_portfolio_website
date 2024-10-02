@@ -1,134 +1,114 @@
+
 .hero-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     padding: 4rem 2rem;
-    position: relative;
-    background-color: #060417;
-    min-height: 100vh;
-    overflow: hidden;
     color: #fff;
-}
-
-/* Background Circles */
-.hero-container::before,
-.hero-container::after {
-    content: "";
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-    background: rgba(1, 241, 101, 0.986);
-    position: absolute;
-    z-index: -1;
-}
-
-.hero-container::before {
-    top: -8rem;
-    right: -12rem;
-}
-
-.hero-container::after {
-    bottom: -10rem;
-    left: -10rem;
-}
-
-/* Hero Content */
-.hero-content {
-    flex: 1;
-    z-index: 2;
-    
-}
-
-.hero-content h2 {
-    font-size: 3.5rem;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  
+  .hero-content {
+    margin-bottom: 3rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-}
-
-.hero-content p {
+    margin: 0.5rem 0;
+    color: #f7f7f7;
+  }
+  
+  .hero-content p {
     font-size: 1.2rem;
-    font-weight: 300;
-    max-width: 500px;
-    line-height: 1.8;
-}
-
-/* Hero Images Section - Horizontal Layout */
-.hero-img {
-    flex: 1;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    color: #b0b0b0;
+  }
+  
+  .hero-img {
     display: flex;
-    flex-direction:row; /* Row layout for images */
-    justify-content: space-between; /* Evenly distribute images */
-    align-items: center; /* Vertically align the images */
-    gap: 2rem; /* Space between the images */
-    z-index: 2;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+  }
 
-.icon{
-    flex: 1;
+  .image1{
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .tech-icon,
+  .icon {
     display: flex;
-    flex-direction: row;
-}
-/* Tech Icons */
-.tech-icon img {
-    border-radius: 15%;
-    width: 120px; /* Adjust image width */
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tech-icon img:hover {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    border: 2px solid #6f58c9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-img img:hover {
     transform: scale(1.1);
-    box-shadow: 0px  rgb(255, 255, 255);
-}
-
-/* General Image Styles */
-.hero-img img {
-    border-radius: 10px;
-    width: 200px; /* Adjust width for uniform image size */
-    height: auto;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.hero-img img:hover {
-    transform: translateY(-10px);
-    filter: brightness(1.2);
-}
-
-/* Icon Container for other images */
-.icon img {
-    width: 150px; /* Adjust width for icon images */
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.icon img:hover {
-    transform: translateY(-5px);
-    filter: brightness(1.1);
-}
-
-/* Responsive Design for Mobile */
-/* @media (max-width: 768px) {
+  }
+  
+  /* Responsive Design */
+  @media screen and (min-width: 768px) {
     .hero-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 3rem 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem;
     }
-
+  
     .hero-content h2 {
-        font-size: 2.8rem;
+      font-size: 3rem;
     }
-
+  
     .hero-content p {
-        font-size: 1rem;
+      font-size: 1.3rem;
     }
-
+  
     .hero-img {
-        flex-direction: column; 
-        align-items: center;
-        gap: 1rem;
+      flex-wrap: nowrap;
     }
-
-    .hero-img img, .icon img {
-        width: 80%; 
+  
+    .tech-icon {
+      flex-direction: row;
+      gap: 2rem;
     }
-} */
+  
+    .hero-img img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .hero-content h2 {
+      font-size: 3.5rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.4rem;
+    }
+  
+    .hero-img img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  

@@ -6,27 +6,28 @@
 
 }
 .skills-container::after,
-.skills-container::before{
+.skills-container::before
+{
     content: "";
-    width: 28rem;
-    height: 28rem;
-    border-radius: 28.125rem;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 28rem;
     background: #fff;
-    position: absolute;
-    z-index: -1;
-    filter: blur(20px);
-}
-
+    position:absolute;
+    z-index: 1;
+    filter: blur(200px);
+} 
 .skills-container::after{
-    top: -3rem;
-    left: -5rem;
-}
+    top: -1rem;
+    left: -rem;
+} 
 
 .skills-container::before{
     background: #7c5fe6;
     bottom: 0rem;
     right: 0rem;
-}
+    filter: blur(170px);
+} 
 
 .skill-icon {
     width: 4rem;

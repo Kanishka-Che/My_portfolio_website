@@ -11,10 +11,11 @@ const Hero = () => {
     <section className='hero-container'>
 
     <div className='hero-content'>
-        <h2>Building Digital Experiences That Inspire</h2>
+        <h2>HI There!</h2>
+        <h2>I'M Kanishka Chethana</h2>
     
     <p>
-        passionate Frotend developer  
+    Passionate frontend developer with full-stack expertise, crafting seamless digital experiences from front to back. 
     </p>
     </div>
 
@@ -24,14 +25,14 @@ const Hero = () => {
         <img className='image1' src={photo1} alt="photo 1"/>
       
       <div>
-      <img className='image2' src={photo2} alt="photo 2"/>
+      <img className='image2' src={photo3} alt="photo 2"/>
       </div>
       </div>
 
     <div>
 
       <div className='icon'>
-      <img src={photo3} alt="photo 3"/>
+      <img src={photo2} alt="photo 3"/>
       </div>
       <div>
       <img src={photo4} alt="photo 4"/>
