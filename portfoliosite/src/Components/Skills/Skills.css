@@ -19,11 +19,11 @@
     top: -1rem;
     left: -1rem;
     transition: background 0.3s ease; 
-}
-.skill-icon img{
+} 
+ .skill-icon img{
     width: 90px;
     height: auto;
-}
+} 
 
 .skills-contantainer h5{
     font-size: 1.5rem;
@@ -38,7 +38,7 @@
 }
 
 .skills{
-    flex: 1;
+    flex:1;
     display: grid;
     grid-gap:3rem;
     grid-template-columns: repeat(2,1fr);

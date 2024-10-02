@@ -1,6 +1,6 @@
 .skills-card {
     border-radius: 0.7rem;
-    border: 1.5px solid #6751b9;
+    border: 1.5px solid #634eb0;
     padding: 2rem; 
     text-align: center;
     background: rgba(22, 17, 47, 1);
@@ -9,6 +9,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    
 }
 
 .skills-card:hover,
@@ -55,4 +56,4 @@
     .skills-card img {
         width: 1.5rem; 
     }
-} 
+}  
