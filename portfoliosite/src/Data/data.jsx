@@ -7,9 +7,9 @@ export const SKILLS = [
       title: "Frontend",
       icon:icon1, 
       Skills: [
-        { skill: "HTML5", Percentage: "80%" }, 
-        { skill: "CSS3", Percentage: "90%" },
-        { skill: "JavaScript", Percentage: "80%" },
+        { skill: "HTML5", Percentage: "75%" }, 
+        { skill: "CSS3", Percentage: "80%" },
+        { skill: "JavaScript", Percentage: "70%" },
       ],
     },
     {
@@ -23,7 +23,7 @@ export const SKILLS = [
       title: "Tools",
       icon: icon3, 
       Skills: [
-        { skill: "Git & GitHub", Percentage: "70%" },
+        { skill: "Git & GitHub", Percentage: "80%" },
         { skill: "Visual Studio Code", Percentage: "90%" },
       ],
     },
