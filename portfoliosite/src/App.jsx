@@ -15,6 +15,7 @@ const App = () => {
       <Hero/>
       <Skills/>
       <ContactMe/>
+      <Mycv/>
       </div>
       </>
       
