@@ -10,7 +10,7 @@ const Mycv = () => {
       
         
         <a href={resum}download="resum">
-          <button className='cv-my'>Download</button>
+          <button className='cv-my'>Download My CV</button>
         </a>
       
     </div>
