@@ -3,7 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh; 
+<<<<<<< HEAD
   background-color:#e0e1dd;
+=======
+  background-color: #060417;
+>>>>>>> eb1d8b52fc02627826e536e8a221b025e6a7efd4
 }
 
 .cv-my {
