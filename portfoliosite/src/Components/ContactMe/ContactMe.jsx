@@ -6,8 +6,33 @@ import emailIcon from 'C:/Users/Chethana/Desktop/portfoliyo site/My_portfolio_we
 import githubIcon from 'C:/Users/Chethana/Desktop/portfoliyo site/My_portfolio_website01/portfoliosite/src/assets/github.png';
 
 const ContactMe = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "42565c78-214d-41d2-9f03-32a5ef4f4170");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert(res.message);
+    }
+  };
+  
+  
+  
   return (
-    <section className='contact-container'>
+    <section onSubmit={onSubmit}className='contact-container'>
         <h5>Contact Me</h5> 
  
 
